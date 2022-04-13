@@ -52,6 +52,7 @@ public class UIManager : MonoBehaviour
     class SaveData{
         public List<int> gameScores = new List<int>(5);
     }
+    //ABSTRACTION
     public void LoadScores(){
         Debug.Log("Loading Scores");
         string path = Application.persistentDataPath + "/saveprofile.json";

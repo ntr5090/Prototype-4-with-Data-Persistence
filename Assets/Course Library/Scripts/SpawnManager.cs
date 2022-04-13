@@ -9,8 +9,9 @@ public class SpawnManager : MonoBehaviour
     public GameObject enemyPrefab;
     //private float spawnDelay = 1;
     //private float spawnFrequency = 3;
-    private float randX;
-    private float randZ;
+    //ENCAPSULATION
+    [SerializeField] float randX {get; set;}
+    [SerializeField] float randZ {get; set;}
     private float spawnRange = 9;
     private PlayerController playerControllerScript;
     public int enemyCount;
