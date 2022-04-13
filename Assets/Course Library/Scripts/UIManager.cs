@@ -1,9 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using TMPro;
-using UnityEngine.SceneManagement;
 using System.IO;
 
 public class UIManager : MonoBehaviour
@@ -25,10 +23,6 @@ public class UIManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //menuArray = new List<TextMeshProUGUI>();
-        foreach(TextMeshProUGUI text in menuArray){
-            Debug.Log(text);
-        }
         tempArray = new List<int>(5);
         Debug.Log("Initializing Temp Array");
         for(int i=0; i<5; i++){

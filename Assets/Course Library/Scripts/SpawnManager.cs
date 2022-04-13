@@ -29,6 +29,7 @@ public class SpawnManager : MonoBehaviour
         Debug.Log("Wave " + waveNum);
         gameStarted=true;
         StartScreen.gameObject.SetActive(false);
+        waveNumText.SetText("Wave " + waveNum);
         
     }
 
@@ -40,9 +41,10 @@ public class SpawnManager : MonoBehaviour
                 enemyCount = FindObjectsOfType<Enemy>().Length;
                 if(enemyCount == 0){
                     waveNum++;
+                    waveNumText.SetText("Wave " + waveNum);
                     spawnEnemyWave(waveNum);
                     //Debug.Log("Wave " + waveNum);
-                    waveNumText.SetText("Wave " + waveNum);
+                    
 
                 }
             }
